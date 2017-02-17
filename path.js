@@ -13,8 +13,7 @@ for (let i =0; i<n;i++){
       path[i]=true
     }
    }
-  }
-}
+  
 path[n]=true
 return path
 }
@@ -22,12 +21,12 @@ return path
 function stroll(path,index){
   if (index==path.length){
     return 1
-    Elseif (path[index]=false){
+  }
+    elseif (path[index]=false){
     return 0
   }
     else{
     return stroll(path, index+1)
-  }
   }
 }
 
