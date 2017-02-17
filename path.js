@@ -13,16 +13,16 @@ for (let i =0; i<n;i++){
       path[i]=true
     }
    }
-  
+
 path[n]=true
 return path
 }
 
 function stroll(path,index){
-  if (index==path.length){
+  if (index==(path.length-1)){
     return 1
   }
-    elseif (path[index]=false){
+    else if (path[index]=false){
     return 0
   }
     else{
@@ -31,19 +31,20 @@ function stroll(path,index){
 }
 
 function rsj (path, index){
- if (index==path.length){
+ if (index==(path.length-1)){
     return 1
-    elseif (path[index]=false){
+  }
+    else if (path[index]=false){
       return 0
     }
-    elseif (index>path.lenght){
+    else if (index>(path.lenght-1)){
       return 0
     }
     else{
       return rsj(path, index+1) + rsj(path, index+5) + rsj(path, index+10)
     }
   }
-}
+
 
 //Test code
 let testpath1 = buildPath(0.10,15);
@@ -51,7 +52,7 @@ let testpath2 = buildPath(0.50,15);
 console.log(testpath1);
 console.log(testpath2);
 console.log("---------------------");
-console.log(stroll([true,false,true]],0));
-console.log(stroll([true,true,true]],0));
+console.log(stroll([true,false,true],0));
+console.log(stroll([true,true,true],0));
 console.log(rsj(testpath1,0));
 console.log(rsj(testpath2,0));
