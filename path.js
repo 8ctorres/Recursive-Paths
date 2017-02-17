@@ -8,6 +8,7 @@ for (let i =0; i<n;i++){
   let r = Math.random();
   if (r<=p){
      path[i]=false
+  }
     else{
       path[i]=true
     }
