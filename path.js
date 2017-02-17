@@ -1,11 +1,11 @@
 //Your code below
 // p is percentage of traps in the array
 // n is the leght of the array
-let path = []
+
 function buildPath(p,n){
-path = []
+let path = []
 for (let i =0; i<n;i++){
-  let r = math.floor(math.random()*10)
+  let r = math.round(math.random(),2)
   if (r<=p){
      path[i]=false
     else {
@@ -16,11 +16,27 @@ for (let i =0; i<n;i++){
 path[n]=true
 return path
 }
+
+
 function stroll(path,index){
-  if (index==path.length-1){
+  if (index==path.length){
     return 1
     elseif (path[index]=false)
     return 0
+    else
+    return stroll(path, index+1)
+  }
+}
+
+function rsj (path, index)
+ if (index==path.length){
+    return 1
+    elseif (path[index]=false)
+    return 0
+    elseif (index>path.lenght)
+    return 0
+    else
+    return rsj(path, index+1) + rsj(path, index+5) + rsj(path, index+10)
   }
 }
 
