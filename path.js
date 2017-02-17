@@ -5,38 +5,43 @@
 function buildPath(p,n){
 let path = []
 for (let i =0; i<n;i++){
-  let r = math.round(math.random(),2)
+  let r = Math.random();
   if (r<=p){
      path[i]=false
-    else {
-     path[i]=true
+    else{
+      path[i]=true
     }
+   }
   }
 }
 path[n]=true
 return path
 }
 
-
 function stroll(path,index){
   if (index==path.length){
     return 1
-    elseif (path[index]=false)
+    Elseif (path[index]=false){
     return 0
-    else
+  }
+    else{
     return stroll(path, index+1)
+  }
   }
 }
 
-function rsj (path, index)
+function rsj (path, index){
  if (index==path.length){
     return 1
-    elseif (path[index]=false)
-    return 0
-    elseif (index>path.lenght)
-    return 0
-    else
-    return rsj(path, index+1) + rsj(path, index+5) + rsj(path, index+10)
+    elseif (path[index]=false){
+      return 0
+    }
+    elseif (index>path.lenght){
+      return 0
+    }
+    else{
+      return rsj(path, index+1) + rsj(path, index+5) + rsj(path, index+10)
+    }
   }
 }
 

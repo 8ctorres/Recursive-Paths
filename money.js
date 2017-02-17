@@ -6,8 +6,9 @@ Function permutations(actual,objetivo){
         ElseIf (actual > objetivo){
             Return 0
             }
-        Else
+        Else{
             Return permutations(actual + 1, objetivo) + permutations(actual + 5, objetivo) + permutations(actual + 10, objetivo) + permutations(actual + 25, objetivo)
+          }
         }
     }
 
