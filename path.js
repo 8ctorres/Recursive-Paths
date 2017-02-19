@@ -44,6 +44,7 @@ function stroll(path,index){
 
 function rsj (path, index){
 // console.log("Entering rsj...")
+//console.log(index + " = " + path[index])
  if (index==(path.length-1)){
 //  console.log("index==path.lenght-1...return 1")
     return 1
@@ -78,5 +79,5 @@ console.log("RSJ With Lenght 16 & 10% false probability")
 console.log(rsj(buildPath(0.10,15),0));
 console.log("---------------------");
 console.log("RSJ With Lenght 16 & 50% false probability")
-console.log(rsj(buildPath(0.50,15),0));
+console.log(rsj(buildPath(0.95,15),0));
 console.log("---------------------")
