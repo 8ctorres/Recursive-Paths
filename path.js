@@ -58,9 +58,9 @@ function rsj (path, index){
       return 0
    }
     else{
-//      console.log("else...return rsj recursive +1,+5,+10")
+//      console.log("else...return rsj recursive +1,+2,+10")
 //      console.log("KEY..." + path[index])
-      return rsj(path, index+1) + rsj(path, index+5) + rsj(path, index+10)
+      return rsj(path, index+1) + rsj(path, index+2) + rsj(path, index+5)
     }
   }
 
