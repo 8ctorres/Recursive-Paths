@@ -58,7 +58,7 @@ function rsj (path, index){
       return 0
    }
     else{
-//      console.log("else...return rsj recursive +1,+2,+10")
+//      console.log("else...return rsj recursive +1,+2,+5")
 //      console.log("KEY..." + path[index])
       return rsj(path, index+1) + rsj(path, index+2) + rsj(path, index+5)
     }
@@ -79,5 +79,5 @@ console.log("RSJ With Lenght 16 & 10% false probability")
 console.log(rsj(buildPath(0.10,15),0));
 console.log("---------------------");
 console.log("RSJ With Lenght 16 & 50% false probability")
-console.log(rsj(buildPath(0.95,15),0));
+console.log(rsj(buildPath(0.50,15),0));
 console.log("---------------------")
