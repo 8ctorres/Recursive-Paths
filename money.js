@@ -1,7 +1,7 @@
 //Defining the function
 
 function permutations(actual,objetivo){
-        if (actua ==objetivo){
+        if (actual==objetivo){
             Return 1
           }
         else if (actual>objetivo){
