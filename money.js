@@ -1,3 +1,4 @@
+//This JavaScript program calculates the number of routes to give change for a dollar using pennies, nickles, dimes and quarters//
 //Defining the function
 
 function permutations(actual,objetivo){
